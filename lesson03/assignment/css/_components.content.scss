@@ -14,8 +14,7 @@ html {
 }
 
 header {
-    height: 80px;
-    // width: 100vw;
+    height: 5rem;
     background-color: #4b2e83;
     display: flex;
     align-items: center;
@@ -28,7 +27,7 @@ header img {
 
 header p {
     color: $white;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
     font-size: 1.2rem;
     font-weight: lighter;
 }
