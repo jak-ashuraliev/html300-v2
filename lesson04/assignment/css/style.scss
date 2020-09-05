@@ -1,0 +1,108 @@
+// Import partials here
+@import 'base.normalize';
+@import 'settings.variables';
+@import 'mixins';
+
+// center main tag in the middile
+#app {
+  width: 80%;
+  margin: 4rem auto;
+}
+
+// set the background color of the body and font
+body {
+  background-color: $black;
+  font-family: 'Nunito', sans-serif;
+}
+
+// list movie poster side by side
+ul {
+  li {
+    display: inline-block;
+    vertical-align: top;
+    width: 26vw;
+    position: relative;
+    overflow: hidden;
+
+    // add hover effect to section/posters
+    &:hover {
+      section {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+      }
+
+      // scale poster on hover
+      img {
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+      }
+    }
+
+    // set the image width to 100% within list elements
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 350ms ease-in-out;
+
+      transform: scale(1);
+      -webit-transform: scale(1);
+      -ms-transform: scale(1);
+    }
+  }
+}
+
+// styling section/overlay headings and include mixins
+section {
+
+  // mixin card
+  @include posterOverlay;
+
+  button {
+    // mixin button 
+    @include button;
+  }
+
+  h3 {
+    margin-bottom: 0.625rem;
+    font-size: 1.125rem;
+  }
+
+  p {
+    line-height: 1.4;
+    font-size: 0.9375rem;
+    margin-bottom: 0.625rem;
+  }
+
+}
+
+
+/* 
+
+==== RESOURCES ====
+
+https://www.youtube.com/watch?v=UL60B8TdxAU
+https://thoughtbot.com/blog/transitions-and-transforms
+https://www.w3schools.com/css/css3_2dtransforms.asp
+
+I've followed these 3 resouces: 1) youtube 2) blog post 3) w3schools tutorial where it demonstrates
+how to use scale and shrink on elements.
+I have added my own twist by defining my own scale values and transform properties.
+I've also referred to a few examples on mozilla developer:
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale
+
+For the purpose of this assignment and the final project, I've kept this assignment
+very simple. I am familiar with other css transform methods such as:
+
+- translate()
+- rotate()
+- skew()
+- matrix()
+
+I believe scale() method would work well on my final project.
+
+*/

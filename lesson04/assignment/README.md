@@ -3,30 +3,59 @@
 From now on, all assignments will be building pieces that will be included in the final assignment. Create using the content (text, images) that you want in the final site.
 
 ### Required setup if not already installed (it should be)
+
 - Install [node](https://nodejs.org/en/)
 
 ### Research
-Find (at least) __one__ example of transition-based animation that you want to include into your final project.  Remember this final project will be part of your portfolio, you want to use it to impress future employers. Implement that transition you found using SCSS, Mixins, and Variables. When working on the final project, you can move over the code written here.
+
+Find (at least) **one** example of transition-based animation that you want to include into your final project. Remember this final project will be part of your portfolio, you want to use it to impress future employers. Implement that transition you found using SCSS, Mixins, and Variables. When working on the final project, you can move over the code written here.
 
 ### To get started:
--	In your forked repo, create a new branch off of master called `lesson-04` or similar
--   Navigate to the root folder of this assignment within terminal in your fork, `lesson04/assignment`
--   Run `npm install`
--   Run `npx gulp`
-- 	Work in the same setup as you're used to, feel free to structure the SCSS at your preference
-- 	Make sure that your code runs and the animation works in the browser when finished
+
+- In your forked repo, create a new branch off of master called `lesson-04` or similar
+- Navigate to the root folder of this assignment within terminal in your fork, `lesson04/assignment`
+- Run `npm install`
+- Run `npx gulp`
+-     Work in the same setup as you're used to, feel free to structure the SCSS at your preference
+-     Make sure that your code runs and the animation works in the browser when finished
 
 ### Requirements:
+
 - CSS Animation(s) present is based on transitioning properties, should look smooth
 - Use of Sass features (at least 1 mixin and variables)
 - Provided inspiration source/source code
 - Use of comments in HTML/CSS
 
 ### BONUS
+
 - Use BEM style naming in your HTML/CSS
 - Extra: Create multiple transition-based animations
 
 ### To Submit:
+
 - Create a Pull Request for your assignment branch to your forked master
 - Submit the link to your pull request in your assignment submission box
 - Once assignment is graded, merge the Pull Request
+
+### RESOURCES:
+
+- https://www.youtube.com/watch?v=UL60B8TdxAU
+- https://thoughtbot.com/blog/transitions-and-transforms
+- https://www.w3schools.com/css/css3_2dtransforms.asp
+
+I've followed these 3 resouces: 1) youtube 2) blog post 3) w3schools tutorial where it demonstrates
+how to use scale and shrink on elements.
+I have added my own twist by defining my own scale values and transform properties.
+I've also referred to a few examples on mozilla developer:
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale
+
+For the purpose of this assignment and the final project, I've kept this project
+very simple. I am familiar with other css transform methods such as:
+
+- translate()
+- rotate()
+- skew()
+- matrix()
+
+I believe scale() method would work well on my final project
