@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap" rel="stylesheet">
+  <!-- jQuery  -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <title>Assignment 06 - Bootstrap 4</title>
+</head>
+
+<body onload="document.body.style.opacity='1'">
+
+  <!-- Nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="images.html">Images</a>
+        <a class="nav-link active" href="accordion.html">Accordion</a>
+        <a class="nav-link" href="grid.html">Grid System</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Nav End -->
+
+  <!-- Section Images -->
+  <section class="section-accordion container">
+    <h2 class="pt-5 display-4 text-muted">Accordion</h2>
+    <p class="lead mb-5 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit, Eos repudiandae officiis
+      dolores
+      perspiciatis pariatur culpa.</p>
+
+    <!-- Accordion Start -->
+    <div id="accordion">
+
+      <!-- Soccer  -->
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+              aria-controls="collapseOne">
+              Soccer
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="container p-5">
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  src="https://images.unsplash.com/photo-1528162841823-9e55a8cc2f58?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  class="img-fluid float-left" alt="image placeholder">
+              </div>
+              <div class="col-md-8">
+                <h2>Soccer</h2>
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon
+                officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3
+                wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                et.
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad
+                vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                nesciunt
+                you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Soccer End -->
+
+      <!-- Basketball -->
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+              aria-controls="collapseTwo">
+              Basketball
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="container p-5">
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1367&q=80"
+                  class="img-fluid float-left" alt="image placeholder">
+              </div>
+              <div class="col-md-8">
+                <h2>Basketball</h2>
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon
+                officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3
+                wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                et.
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad
+                vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                nesciunt
+                you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Basketbal End -->
+
+      <!-- Ice Hockey -->
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+              aria-controls="collapseThree">
+              Ice Hockey
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="container p-5">
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  src="https://images.unsplash.com/photo-1546897134-291f06ff9cd4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                  class="img-fluid float-left" alt="image placeholder">
+              </div>
+              <div class="col-md-8">
+                <h2>Ice Hockey</h2>
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon
+                officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3
+                wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                et.
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad
+                vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                nesciunt
+                you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ice Hockey End -->
+
+      <!-- Football -->
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+              aria-controls="collapseFour">
+              Football
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+          <div class="container p-5">
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  src="https://images.unsplash.com/photo-1485313260896-6e6edf486858?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                  class="img-fluid float-left" alt="image placeholder">
+              </div>
+              <div class="col-md-8">
+                <h2>Football</h2>
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon
+                officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3
+                wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                et.
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad
+                vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                nesciunt
+                you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Football End -->
+
+      <!-- Boxing -->
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
+              aria-controls="collapseFive">
+              Boxing
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+          <div class="container p-5">
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  src="https://images.unsplash.com/flagged/photo-1575825166477-57b0d9cc9437?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                  class="img-fluid float-left" alt="image placeholder">
+              </div>
+              <div class="col-md-8">
+                <h2>Boxing</h2>
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon
+                officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3
+                wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                et.
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad
+                vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                nesciunt
+                you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Boxing End -->
+
+    </div>
+    <!-- Accordion End -->
+  </section>
+  <!-- Section Accordion End -->
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <small>2020 Made with Love in Seattle, WA by Jak Ashuraliev.</small>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Optional JavaScript -->
+  <script src="script/script.js"></script>
+  <!-- Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
