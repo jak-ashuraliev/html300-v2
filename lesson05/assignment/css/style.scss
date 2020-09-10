@@ -4,3 +4,127 @@
 @import 'settings.responsive';
 @import 'components.content';
 
+// CONTAINER
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.3fr 2fr 0.5fr;
+  grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "aside main main main"
+    "footer footer footer footer"
+}
+
+// HEADER
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: header;
+  background-color: $crimson;
+}
+
+// NAVIGATION
+.nav {
+  grid-area: nav;
+  background-color: $dark-green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  // nav links
+  &__link {
+    text-decoration: none;
+    color: $white;
+    font-size: 1.4rem;
+
+    // nav links hover effect
+    &:hover {
+      color: $dark-gray;
+    }
+
+  }
+}
+
+// SIDEBAR / ASIDE
+.sidebar {
+  grid-area: aside;
+  background-color: $purple;
+
+  // sidebar heading
+  &__heading {
+    margin-bottom: 1rem;
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  // sidebar navigation
+  &__nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // sidebar links
+  &__link {
+    color: $white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+
+    // sidebar links hover effect
+    &:hover {
+      background-color: $dark-gray;
+    }
+  }
+}
+
+// MAIN
+.main {
+  grid-area: main;
+  background-color: $orange;
+  padding: 2rem;
+
+  // main heading
+  &__heading {
+    margin-bottom: 1rem;
+  }
+
+  // main description
+  &__desc {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  // main button
+  &__btn {
+    border: none;
+    outline: none;
+    color: $white;
+    padding: 0.625rem 1rem;
+    background-color: $blue;
+    cursor: pointer;
+
+    // main button hover effect
+    &:hover {
+      background-color: $dark-blue;
+    }
+  }
+}
+
+// FOOTER
+.footer {
+  grid-area: footer;
+  background-color: $blue;
+  padding: 2rem;
+
+  // footer heading
+  &__heading {
+    margin-bottom: 1rem;
+  }
+
+  // footer description
+  &__desc {
+    line-height: 1.5;
+  }
+}
